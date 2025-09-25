@@ -5,7 +5,7 @@ body {
 }
 
 .site-header {
-  border-bottom: 1px  #e7e9fc;
+  /* тест я уже хз что */
 }
 
 .logo {
@@ -77,7 +77,7 @@ body {
   color: #ffffff;
 }
 
-.order-button {
+.service-button {
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -88,8 +88,8 @@ body {
   cursor: pointer;
 }
 
-.order-button:hover,
-.order-button:focus {
+.service-button:hover,
+.service-button:focus {
   background-color: #404bbf;
 }
 
