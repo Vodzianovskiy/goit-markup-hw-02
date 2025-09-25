@@ -4,6 +4,10 @@ body {
   background-color: #ffffff;
 }
 
+.site-header {
+  /* border-bottom хз може так буде все ок */
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
