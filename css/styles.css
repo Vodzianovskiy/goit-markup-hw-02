@@ -5,7 +5,7 @@ body {
 }
 
 .site-header {
-  /* border-bottom хз може так буде все ок */
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -73,6 +73,7 @@ body {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -125,6 +126,7 @@ body {
 .section-title {
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
@@ -152,8 +154,14 @@ body {
   letter-spacing: 0.02em;
 }
 
+.portfolio-section {
+}
+
 .portfolio-list {
   list-style: none;
+}
+
+.portfolio-card {
 }
 
 .portfolio-title {
