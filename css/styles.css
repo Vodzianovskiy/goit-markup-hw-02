@@ -1,633 +1,196 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  width: 1440px;
-  height: 3300px;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
   background-color: #ffffff;
 }
 
 .site-header {
-  width: 1440px; /* или 1440px, если нужно фиксированно */
-  height: 72px;
-  border-bottom: 1px solid #e7e9fc; /* Линия снизу */
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
-  width: 44px;
-  height: 21px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 3%;
-  text-decoration: none;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #4d5ae5;
+  text-decoration: none;
 }
 
-.logo_studio {
-  width: 71px;
-  height: 21px;
-  font-family: Raleway;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 3%;
+.logo-studio {
   color: #2e2f42;
 }
 
 .menu-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #2e2f42;
-}
-.studio {
-  width: 48px;
-  height: 24px;
-  opacity: 1;
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  text-decoration: none;
 }
 
-.portfolio {
-  width: 66px;
-  height: 24px;
-  opacity: 1;
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-
-.contacts {
-  width: 67px;
-  height: 24px;
-  opacity: 1;
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-
-.menu-list a:hover {
+.menu-link:hover,
+.menu-link:focus {
   color: #404bbf;
 }
 
-.contacts-email {
-  width: 153px;
-  height: 24px;
-  top: 24px;
-  left: 940px;
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+.contacts-info {
   font-style: normal;
 }
 
-.contacts-tel {
-  width: 151px;
-  height: 24px;
-  top: 24px;
-  left: 1133px;
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  font-style: normal;
+.contacts-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
 }
 
-.hero-image {
-  width: 1440px;
-  height: 600px;
-  opacity: 1;
-  top: 72px;
+.contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+.hero-section {
   background-color: #2e2f42;
 }
 
-.text-1 {
-  width: 496px;
-  height: 120px;
-  top: 260px;
-  left: 472px;
-  font-family: Roboto;
-  font-weight: 700;
-  font-style: Bold;
+.hero-title {
   font-size: 56px;
-  line-height: 60px;
-  letter-spacing: 2%;
+  line-height: 1.07;
   text-align: center;
+  letter-spacing: 0.02em;
   color: #ffffff;
 }
 
-.order {
-  width: 169px;
-  height: 56px;
-  gap: 10px;
-  border-radius: 4px;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  top: 20px;
-  left: 20px;
+.order-button {
   background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
-}
-
-button {
   cursor: pointer;
 }
-.order:hover {
-  width: 169px;
-  height: 56px;
-  gap: 10px;
-  border-radius: 4px;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  top: 88px;
-  left: 20px;
+
+.order-button:hover,
+.order-button:focus {
   background-color: #404bbf;
-  color: #ffffff;
 }
 
-.info {
-  top: 792px;
-  left: 156px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-.main-text {
-  font-family: Roboto;
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantage-title {
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.strategy {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-
-.strategy-text {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
+.advantage-text {
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-.punctuality {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-.punctuality-tex {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-
-.diligence {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-
-.diligence-text {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-
-.technologies {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-
-.technologies-text {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-}
-
-.light-bg {
-  opacity: 1;
-  top: 1016px;
+.team-section {
   background-color: #f4f4fd;
 }
 
-.team {
-  opacity: 1;
-  top: 1136px;
-  left: 639px;
-  color: #2e2f42;
-}
-
-.card {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  text-align: center;
-  color: #2e2f42;
-}
-
-.text-inside {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  text-align: center;
-  color: #434455;
-}
-
-.card-1 {
-  width: 264;
-  height: 380;
-  opacity: 1;
-  top: 1248px;
-  left: 156px;
-  gap: 32px;
-  padding-bottom: 32px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  background-color: #ffffff;
-}
-
-.card-2 {
-  width: 264;
-  height: 380;
-  opacity: 1;
-  top: 1248px;
-  left: 444px;
-  gap: 32px;
-  padding-bottom: 32px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  background-color: #ffffff;
-}
-.card-3 {
-  width: 264;
-  height: 380;
-  opacity: 1;
-  top: 1248px;
-  left: 732px;
-  gap: 32px;
-  padding-bottom: 32px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  background-color: #ffffff;
-}
-.card-4 {
-  width: 264;
-  height: 380;
-  opacity: 1;
-  top: 1248px;
-  left: 1020px;
-  gap: 32px;
-  padding-bottom: 32px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  background-color: #ffffff;
-}
-
-.our-portfolio {
-  top: 1868px;
-  left: 156px;
-  border-width: 1px;
-  border-color: #e7e9fc;
-}
-h1 {
-  width: 218;
-  height: 40;
-  opacity: 1;
-  top: 1868px;
-  left: 611px;
-  font-family: Roboto;
-  font-weight: 700;
-  font-style: Bold;
+.section-title {
   font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 2%;
+  line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: #2e2f42;
 }
 
-.row-1 {
-  width: 1128;
-  height: 420;
-  opacity: 1;
-  top: 1980px;
-  left: 156px;
-  border-width: 1px;
-  background: #ffffff;
-  border-color: #e7e9fc;
+.team-list {
+  list-style: none;
 }
 
-.card-banking-app {
-  width: 360;
-  height: 120;
-  opacity: 1;
-  top: 300px;
-  gap: 8px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-color: 0px 1px 1px 1px #e7e9fc;
-}
-
-.banking-app {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #2e2f42;
-}
-
-.app {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #434455;
-}
-
-.card-cashless-payment {
-  width: 360;
-  height: 120;
-  opacity: 1;
-  top: 300px;
-  gap: 8px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-color: 0px 1px 1px 1px #e7e9fc;
-}
-
-.cashless-payment {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #2e2f42;
-}
-
-.marketing {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #434455;
-}
-
-.card-meditation-app {
-  width: 360;
-  height: 120;
-  opacity: 1;
-  top: 300px;
-  gap: 8px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-color: 0px 1px 1px 1px #e7e9fc;
-}
-
-.meditation-app {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #2e2f42;
-}
-
-.app2 {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #434455;
-}
-
-.row-2 {
-  width: 1128;
-  height: 420;
-  opacity: 1;
-  top: 2448px;
-  left: 156px;
+.team-card {
   background-color: #ffffff;
 }
 
-.card-taxi-service {
-  width: 360;
-  height: 120;
-  opacity: 1;
-  top: 300px;
-  gap: 8px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  background-color: 0px 1px 1px 1px #e7e9fc;
-}
-
-.taxi-service {
-  font-family: Roboto;
+.team-name {
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #2e2f42;
-}
-.taxi-service-marketing {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #434455;
-}
-
-.card-screen-illustrations {
-  width: 360;
-  height: 120;
-  opacity: 1;
-  top: 300px;
-  gap: 8px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-color: 0px 1px 1px 1px #e7e9fc;
-}
-
-.screen-illustrations {
-  font-family: Roboto;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
-.design {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
+.team-role {
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-.card-online-courses {
-  width: 360;
-  height: 120;
-  opacity: 1;
-  top: 300px;
-  gap: 8px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-color: 0px 1px 1px 1px #e7e9fc;
+.portfolio-section {
 }
 
-.online-courses {
-  font-family: Roboto;
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-card {
+}
+
+.portfolio-title {
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
-.online-course-marketing {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
+.portfolio-type {
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
 }
 
 .site-footer {
-  width: 1440;
-  height: 312;
-  opacity: 1;
-  top: 2988px;
   background-color: #2e2f42;
 }
 
-.logo_footer {
-  font-family: Raleway;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 3%;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color: #4d5ae5;
-}
-
-.logo_footer-studio {
-  font-family: Raleway;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 3%;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color: #f4f4fd;
-}
-
 .footer-text {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.5;
   color: #f4f4fd;
+  letter-spacing: 0.02em;
 }
