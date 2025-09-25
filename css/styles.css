@@ -23,10 +23,12 @@ body {
   color: #2e2f42;
 }
 
+.site-footer .logo-studio {
+  color: #f4f4fd;
+}
+
 .menu-list {
   list-style: none;
-  display: flex;
-  gap: 40px;
 }
 
 .menu-link {
@@ -49,8 +51,6 @@ body {
 
 .contacts-list {
   list-style: none;
-  display: flex;
-  gap: 40px;
 }
 
 .contact-link {
@@ -95,12 +95,6 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
